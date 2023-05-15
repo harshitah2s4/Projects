@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="container">
+    <input type="password" placeholder="password" id="password">
+    <!--type=password mein hidden , type=text mein  visible-->
+    <img src="214-2148722_png-file-svg-eye-closed-icon-png-transparent.png" id="eyeicon">
+    <script>
+   let a=document.getElementById("eyeicon");
+   let b=document.getElementById("password");
+   a.onclick=function(){
+if(b.type=="password"){
+    b.type="text";
+    a.src="57-575491_open-eye-with-shine-open-eye-icon-png.png";
+}
+else{
+    
+    b.type="password";
+    a.src="214-2148722_png-file-svg-eye-closed-icon-png-transparent.png";
+}
+   }
+    </script>
+</div>
+</body>
+</html>

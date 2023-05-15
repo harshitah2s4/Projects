@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body background="rose-petals-3194062_1920.jpg">
+    <div class="container">
+       <div class="navbar">
+        <ul>
+        <li><a href="" >HOME</a></li>
+        <li><a href="" >ABOUT US</a></li>
+        <li><a href="" >SERVICES</a></li>
+        <li><a href="" >CONTACT US</a></li>
+        <li><a href="" >MORE</a></li>
+    </ul>
+       </div>
+    </div>
+    <div class="content">
+        <div class="left-col">
+            <h1>THE<br>REAL<br>MUSIC</h1>
+        </div>
+        <div class="right-col">
+<p>PLAY MUSIC<br><img src="pngtree-vector-play-icon-png-image_956416.jpg" id="a"></p>
+
+        </div>
+    </div>
+    <audio src="Surf Mesa  ily i love you baby ft Emilee.mp3" id="mysong" type="audio"></audio>
+    <script>
+        var u=document.getElementById("mysong");
+        var l=document.getElementById("a");
+        l.onclick=function(){
+            if(u.paused){
+                u.play();
+                b.src="istockphoto-890158078-612x612.jpg"
+               
+            }
+            else{
+                u.pause();
+              
+            }
+        }
+    </script>
+</body>
+</html>

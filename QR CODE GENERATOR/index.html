@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-----------------------video which helped--------------------->
+    <!--      https://youtu.be/g1j9rR-H1lk             -->
+    <div class="container">
+        <p>Enter your text or url</p>
+        <input type="text" placeholder="Text or URL" id="qrtext">
+        <div id="img-box">
+            <img src="" id="qrimage">
+        </div>
+        <button onclick="generateqr()">Generate QR Code</button>
+    </div>
+    <script>
+        
+        let imgBOX=document.getElementById("img-box");
+       let QRimg=document.getElementById("qrimage");
+       let QRtext=document.getElementById("qrtext");
+        function generateqr(){
+            if(QRtext.value.length>0){
+            QRimg.src=" https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+QRtext.value;//qr code api
+            imgBOX.classList.add("show-img");//to add class show-img
+
+        }
+    else{
+        QRtext.classList.add("error");//add error class to shake it incase empty 10 tomes
+        setTimeout(()=>{
+        QRtext.classList.remove("error"); //to stop it after 1 s
+    },1000);
+    }
+}
+    </script>
+</body>
+</html>
